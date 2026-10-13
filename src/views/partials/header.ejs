@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
+    <script defer src="/scripts/hamButton.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-        <ul>
+        <div class="container">
+        <nav class="nav-container">
+        <button id="hamButton" class="menu-toggle" aria-expanded="false" aria-label="Open menu">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>    
+        <ul id="mainMenu">
             <li><a href="/">Home</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/projects">Projects</a></li>
         </ul>
         </nav>
+        </div>
     </header>
