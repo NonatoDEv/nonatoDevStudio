@@ -92,6 +92,37 @@ header{
     flex-direction: column;
     gap: var(--spacing-sm);
 }
+.brand-logo {
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+.brand-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--ui-border);
+    transition: all var(--transition-normal);
+}
+.brand-text {
+    color: var(--text);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    transition: color var(--transition-normal);
+}
+.brand-dot {
+    color: var(--accent);
+}
+.brand-logo:hover .brand-avatar {
+    transform: scale(1.05);
+    border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+.brand-logo:hover .brand-text {
+    color: var(--accent);
+}
 /*hambutton*/
 .menu-toggle {
     display: inline-block;
